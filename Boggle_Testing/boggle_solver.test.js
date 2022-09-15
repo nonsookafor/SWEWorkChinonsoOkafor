@@ -34,8 +34,8 @@ describe('Boggle Solver tests suite:', () => {
       ["g", "D", "F", "k"],
       ["g", "D", "F", "k"]
     ];
-      let dictionary = ["AQUCC", "AQUC", "QUA", "QUD"];
-      let expected = ["AQUC","QUA","QUD"];
+      let dictionary = ["ff", "DDggC", "AQUCC", "AQUC", "QUA", "QUD"];
+      let expected = ["AQUC","QUA","QUD", "DDggC"];
       let solutions = boggle_solver.findAllSolutions(grid, dictionary);
 
       // Lowercasing for case-insensitive string array matching.
@@ -74,7 +74,7 @@ describe('Boggle Solver tests suite:', () => {
       ["C", "D", "F"],
       ["g", "D", "F"]
     ];
-      let dictionary = ["AQUCC", "AQUC", "QUA", "QUD"];
+      let dictionary = ["ac", "AQUCC", "AQUC", "QUA", "QUD"];
       let expected = ["AQUC","QUA","QUD"];
 
       let solutions = boggle_solver.findAllSolutions(grid, dictionary);
@@ -110,7 +110,7 @@ describe('Boggle Solver tests suite:', () => {
       ["C", "D", "F"],
       ["g", "D", "F"]
     ];
-      let dictionary = ["AQUCC", "AQUC", "QUA", "QUD"];
+      let dictionary = ["ac", "AQUCC", "AQUC", "QUA", "QUD"];
       let expected = ["AQUC","QUA","QUD"];
       let solutions = boggle_solver.findAllSolutions(grid, dictionary);
 
@@ -167,7 +167,7 @@ describe('Boggle Solver tests suite:', () => {
       ["C", "D", "F"],
       ["g", "D", "F"]
     ];
-      let dictionary = ["AQUCC", "AQUC", "QUA", "QUD"];
+      let dictionary = ["cg", "AQUCC", "AQUC", "QUA", "QUD"];
       let expected = ["AQUC","QUA","QUD"];
       let solutions = boggle_solver.findAllSolutions(grid, dictionary);
 
@@ -184,7 +184,7 @@ describe('Boggle Solver tests suite:', () => {
       ["C", "D", "F"],
       ["g", "D", "F"]
     ];
-      let dictionary = ["ASTCC", "ASTC", "STA", "STD"];
+      let dictionary = ["ASTCC", "ASTC", "STA", "STD", "st"];
       let expected = ["ASTC","StA","STD"];
       let solutions = boggle_solver.findAllSolutions(grid, dictionary);
 
@@ -201,7 +201,7 @@ describe('Boggle Solver tests suite:', () => {
       ["C", "q", "F"],
       ["g", "D", "F"]
     ];
-      let dictionary = ["AQUCC", "AQUC", "QUA", "QUD", "acqu", "acq"];
+      let dictionary = ["AQUCC", "AQUC", "QUA", "QUD", "acqu", "acq", "acqc", "ac"];
       let expected = [];
       let solutions = boggle_solver.findAllSolutions(grid, dictionary);
 
